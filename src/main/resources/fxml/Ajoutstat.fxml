@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="464.0" prefWidth="547.0" style="-fx-background-color: whitee;" stylesheets="@../css/Ajoutstat.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="interfacesController.AjoutStatC">
+   <children>
+       <Text layoutX="150.0" layoutY="33.0" style="-fx-font-size: 20px;" text="Ajouter des Statistiques" />
+   
+       <!-- ID Match -->
+       <Text layoutX="9.0" layoutY="84.0" text="ID Match:" />
+       <TextField fx:id="idMatchField" layoutX="161.0" layoutY="63.0" prefWidth="200.0" />
+   
+       <!-- Note -->
+       <Text layoutX="20.0" layoutY="140.0" text="Note :" />
+       <TextField fx:id="butsField" layoutX="161.0" layoutY="119.0" prefWidth="200.0" />
+   
+       <!-- Sprint Distance -->
+       <Text layoutX="14.0" layoutY="196.0" text="Sprint Distance:" />
+       <TextField fx:id="sprintdistance" layoutX="161.0" layoutY="175.0" prefWidth="200.0" />
+   
+       <!-- Minutes Played -->
+       <Text layoutX="23.0" layoutY="252.0" text="Minutes:" />
+       <TextField fx:id="minutesField" layoutX="161.0" layoutY="231.0" prefWidth="200.0" />
+   
+       <!-- Critere 1 -->
+       <Text layoutX="21.0" layoutY="308.0" text="Critère 1:" />
+       <TextField fx:id="cr1" layoutX="161.0" layoutY="295.0" prefWidth="200.0" />
+   
+       <!-- Critere 2 -->
+       <Text layoutX="28.0" layoutY="371.0" text="Critère 2:" />
+       <TextField fx:id="cr2" layoutX="161.0" layoutY="350.0" prefWidth="200.0" />
+   
+       <!-- Buttons -->
+       <Button layoutX="174.0" layoutY="407.0" onAction="#handleAddStats" text="Ajouter" />
+       <Button fx:id="annuler" layoutX="289.0" layoutY="407.0" onAction="#handleCancel" text="Retour" />
+   </children>
+</AnchorPane>

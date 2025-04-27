@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+            <?import java.lang.*?>
+            <?import javafx.scene.control.*?>
+            <?import javafx.scene.layout.*?>
+            <?import javafx.scene.text.*?>
+            <?import javafx.scene.control.TableView?>
+            <?import javafx.scene.control.TableColumn?>
+            <?import javafx.scene.layout.AnchorPane?>
+            <?import javafx.scene.text.Text?>
+            <?import javafx.scene.control.Button?>
+
+    <AnchorPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfacesController.AfficherStatAC">
+    <children>
+        <Text layoutX="20.0" layoutY="20.0" style="-fx-font-size: 20px;" text="Afficher Statistiques" />
+
+        <!-- TableView for displaying stats -->
+
+        <TableView fx:id="tableView" layoutX="20.0" layoutY="60.0" prefWidth="600.0" prefHeight="400.0">
+            <columns>
+                <TableColumn fx:id="matchidColumn" text="Match ID" prefWidth="100.0" />
+                <TableColumn fx:id="noteColumn" text="Note" prefWidth="100.0" />
+                <TableColumn fx:id="minutesColumn" text="Minutes" prefWidth="100.0" />
+                <TableColumn fx:id="sprintDistanceColumn" text="Sprint Distance" prefWidth="100.0" />
+                <TableColumn fx:id="butsColumn" text="Buts" prefWidth="100.0" />
+                <TableColumn fx:id="assistsColumn" text="Assists" prefWidth="100.0" />
+            </columns>
+        </TableView>
+
+        <!-- Button to close or go back -->
+        <Button layoutX="531.0" layoutY="464.0" text="Close" />
+        <Button layoutX="248.0" layoutY="463.0" mnemonicParsing="false" text="Supprimer" />
+        <Button layoutX="320.0" layoutY="463.0" mnemonicParsing="false" text="modifier" />
+        <Label layoutX="14.0" layoutY="433.0" />
+        <TextField layoutX="33.0" layoutY="429.0" prefHeight="25.0" prefWidth="72.0" promptText="id:" />
+        <TextField layoutX="123.0" layoutY="429.0" prefHeight="25.0" prefWidth="72.0" promptText="note:" />
+        <TextField layoutX="224.0" layoutY="429.0" prefHeight="25.0" prefWidth="72.0" promptText="minutes" />
+        <TextField layoutX="327.0" layoutY="429.0" prefHeight="25.0" prefWidth="72.0" promptText="sprintD:" />
+        <TextField layoutX="430.0" layoutY="429.0" prefHeight="25.0" prefWidth="72.0" promptText="buts:" />
+        <TextField layoutX="531.0" layoutY="429.0" prefHeight="25.0" prefWidth="72.0" promptText="assists:" />
+    </children>
+    </AnchorPane>

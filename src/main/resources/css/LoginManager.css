@@ -1,0 +1,54 @@
+/* General GridPane styling */
+.root {
+    -fx-background-color: #ffffff; /* Soft white background */
+    -fx-padding: 20;
+    -fx-hgap: 15; /* Increase horizontal gap */
+    -fx-vgap: 15; /* Increase vertical gap */
+}
+
+/* Header Text Styling */
+.text {
+    -fx-font-size: 24px; /* Larger font size */
+    -fx-font-weight: bold;
+    -fx-fill: #333333; /* Dark gray text color */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 2, 0.3, 1, 1);
+    -fx-text-alignment: center;
+}
+
+/* Input Fields Styling */
+.text-field, .password-field {
+    -fx-background-color: #f7f7f7; /* Light gray background for inputs */
+    -fx-border-color: #dcdcdc; /* Light gray border */
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+    -fx-padding: 5 10;
+}
+
+.text-field:hover, .password-field:hover {
+    -fx-border-color: #0073e6; /* Blue border on hover */
+}
+
+/* Button Styling */
+.button {
+    -fx-background-color: #0073e6;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-background-radius: 5;
+    -fx-border-radius: 5;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+}
+#imageView {
+    -fx-preserve-ratio: false; /* Disable aspect ratio preservation */
+    -fx-fit-width: 100%;       /* Ensure the ImageView scales to fill width */
+    -fx-fit-height: 100%;      /* Ensure the ImageView scales to fill height */
+}
+.button:hover {
+    -fx-background-color: #005bb5; /* Darker blue on hover */
+}
+
+.button:pressed {
+    -fx-background-color: #003f7f; /* Even darker blue on click */
+}

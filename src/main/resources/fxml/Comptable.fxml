@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.image.Image?>
+
+<AnchorPane stylesheets="@../css/Comptable.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfacesController.ComptableC">
+    <children>
+
+                <!-- TableView with Columns -->
+          <TableView fx:id="playersTable" prefHeight="400.0" prefWidth="600.0">
+              <columns>
+                  <TableColumn fx:id="colNom" text="Nom" />
+                  <TableColumn fx:id="colPrenom" text="Prenom" />
+                  <TableColumn fx:id="colPosition" prefWidth="63.0" text="Position" />
+                  <TableColumn fx:id="colContractMonths" prefWidth="90.0" text="Contract Months" />
+                  <TableColumn fx:id="colSalary" prefWidth="151.0" text="Salary" />
+                  <TableColumn fx:id="colAction" prefWidth="135.0" text="Action" />
+              </columns>
+          </TableView>
+
+        <!-- Bottom Right "Retour" Button -->
+        <Button fx:id="retour" prefHeight="37.0"  prefWidth="76.0" style="-fx-background-color: #FF5733; -fx-text-fill: white; -fx-font-size: 16px;" text="Retour" AnchorPane.bottomAnchor="20" AnchorPane.rightAnchor="20" />
+    </children>
+</AnchorPane>

@@ -1,0 +1,48 @@
+.table-view {
+    -fx-background-color: white; /* Table background */
+    -fx-border-color: transparent;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #1E90FF; /* Blue header background */
+}
+
+.table-view .column-header {
+    -fx-background-color: #1E90FF; /* Blue background for individual headers */
+    -fx-border-color: white; /* White borders between columns */
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white; /* White header text */
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}
+
+
+.table-row-cell {
+    -fx-background-color: white; /* White background for rows */
+    -fx-text-fill: black; /* Black text for rows */
+}
+.table-row-cell:selected {
+    -fx-background-color: #1E90FF; /* Brighter blue for selected rows */
+    -fx-text-fill: white; /* White text for better contrast */
+    -fx-border-color:#1E90FF; ; /* Add a gold border */
+    -fx-border-width: 2px; /* Make the border noticeable */
+    -fx-font-weight: bold; /* Make text bold */
+}
+
+
+.table-row-cell:odd {
+    -fx-background-color: #F9F9F9; /* Light gray for odd rows */
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #4682B4; /* Light blue for selected rows */
+    -fx-text-fill: white; /* White text for selected rows */
+}
+
+.table-cell {
+    -fx-background-color: white; /* Default cell background */
+    -fx-text-fill: black; /* Default text color */
+}

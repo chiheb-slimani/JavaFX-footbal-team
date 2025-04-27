@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane prefHeight="600.0" prefWidth="800.0" stylesheets="@../css/Menu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfacesController.MenuC">
+   <children>
+      <!-- Background Image -->
+      <ImageView fx:id="imageView" fitHeight="636.0" fitWidth="800" opacity="0.5" preserveRatio="false" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0" AnchorPane.topAnchor="0">
+         <image>
+            <Image url="@../images/equipe_tunisie.jpg" />
+         </image>
+      </ImageView>
+   
+      <!-- Main Content -->
+      <BorderPane>
+         <top>
+            <Label style="-fx-font-size: 36px; -fx-font-weight: bold;" styleClass="title" text="WELCOME TO THE TEAM MANAGEMENT APPLICATION" BorderPane.alignment="CENTER">
+               <padding>
+                  <Insets top="50.0" />
+               </padding>
+            </Label>
+         </top>
+         <center>
+            <VBox alignment="CENTER" spacing="20.0" translateY="-80">
+               <children>
+                  <Label style="-fx-font-size: 28px; -fx-font-weight: bold;" text="Menu" textFill="#eb0808">
+                     <VBox.margin>
+                        <Insets top="50.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Button fx:id="managerSpaceButton" mnemonicParsing="false" style="-fx-font-size: 22px; -fx-pref-width: 250px; -fx-pref-height: 60px;" text="MANAGER SPACE" />
+                  <Button fx:id="dataebgineerspacebutton" mnemonicParsing="false" style="-fx-font-size: 22px; -fx-pref-width: 250px; -fx-pref-height: 60px;" text="DATA ENGINEER SPACE" />
+                  <Button fx:id="accountantspacebutton" mnemonicParsing="false" style="-fx-font-size: 22px; -fx-pref-width: 250px; -fx-pref-height: 60px;" text="ACCOUNTANT SPACE" />
+               </children>
+            </VBox>
+         </center>
+      </BorderPane>
+   </children>
+</StackPane>

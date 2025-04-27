@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="425.0" prefWidth="302.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfacesController.ModifierC">
+    <children>
+        <Label layoutX="200" layoutY="20" style="-fx-font-size: 20px;" text="Modify Player" />
+
+        <!-- Player Info -->
+        <Label layoutX="50" layoutY="70" text="Nom:" />
+        <TextField fx:id="nomField" layoutX="150" layoutY="70" />
+        <Label layoutX="50" layoutY="110" text="Prenom:" />
+        <TextField fx:id="prenomField" layoutX="150" layoutY="110" />
+        <Label layoutX="50" layoutY="150" text="Numero:" />
+        <TextField fx:id="numeroField" layoutX="150" layoutY="150" />
+        <Label layoutX="50" layoutY="190" text="Contract Months:" />
+        <TextField fx:id="contractField" layoutX="150" layoutY="190" />
+        <Label layoutX="50" layoutY="230" text="Salary:" />
+        <TextField fx:id="salaryField" layoutX="150" layoutY="230" />
+
+        <!-- Factors -->
+        <Label layoutX="50" layoutY="270" text="Factor A:" />
+        <TextField fx:id="factorAField" layoutX="150" layoutY="270" text="0" />
+        <Label layoutX="50" layoutY="310" text="Factor B:" />
+        <TextField fx:id="factorBField" layoutX="150" layoutY="310" text="0" />
+
+        <!-- Total -->
+        <Label layoutX="50" layoutY="350" text="Total:" />
+        <Label fx:id="totalLabel" layoutX="150" layoutY="350" style="-fx-font-weight: bold;" />
+
+        <!-- Buttons -->
+        <Button layoutX="100" layoutY="400" onAction="#saveChanges" text="Save" />
+        <Button layoutX="200" layoutY="400" onAction="#goBack" text="Retour" />
+    </children>
+</AnchorPane>

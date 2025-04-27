@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane stylesheets="@../css/AfficherStatD.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfacesController.AfficherStatDC">
+    <children>
+        <Text layoutX="20.0" layoutY="20.0" style="-fx-font-size: 20px;" text="Afficher Statistiques" />
+
+        <!-- TableView for displaying stats -->
+        <TableView fx:id="tableView" layoutX="20.0" layoutY="60.0" prefHeight="366.0" prefWidth="600.0">
+            <columns>
+                <TableColumn fx:id="matchidColumn" prefWidth="100.0" text="Match ID" />
+                <TableColumn fx:id="noteColumn" prefWidth="100.0" text="Note" />
+                <TableColumn fx:id="minutesColumn" prefWidth="100.0" text="Minutes" />
+                <TableColumn fx:id="sprintDistanceColumn" prefWidth="100.0" text="Sprint Distance" />
+                <TableColumn fx:id="cleanSheetColumn" prefWidth="100.0" text="Clean Sheet" />
+                <TableColumn fx:id="recuperationDeBallesColumn" prefWidth="100.0" text="Récupération de Balles" />
+            </columns>
+        </TableView>
+
+        <!-- Button to close or go back -->
+        <Button fx:id="retour" layoutX="531.0" layoutY="464.0" text="Retour" />
+        <Button fx:id="supprimerButton" layoutX="248.0" layoutY="463.0" mnemonicParsing="false" text="Supprimer" />
+        <Button fx:id="modifierButton" layoutX="320.0" layoutY="463.0" mnemonicParsing="false" text="Modifier" />
+
+        <!-- Input fields for stats -->
+        <TextField fx:id="matchIdField" layoutX="33.0" layoutY="429.0" prefHeight="25.0" prefWidth="72.0" promptText="ID:" />
+        <TextField fx:id="noteField" layoutX="123.0" layoutY="429.0" prefHeight="25.0" prefWidth="72.0" promptText="Note:" />
+        <TextField fx:id="minutesField" layoutX="224.0" layoutY="429.0" prefHeight="25.0" prefWidth="72.0" promptText="Minutes" />
+        <TextField fx:id="sprintDistanceField" layoutX="327.0" layoutY="429.0" prefHeight="25.0" prefWidth="72.0" promptText="Sprint D:" />
+        <TextField fx:id="cleanSheetField" layoutX="430.0" layoutY="429.0" prefHeight="25.0" prefWidth="72.0" promptText="Clean S" />
+        <TextField fx:id="recuperationDeBallesField" layoutX="531.0" layoutY="429.0" prefHeight="25.0" prefWidth="72.0" promptText="RDB:" />
+    </children>
+</AnchorPane>

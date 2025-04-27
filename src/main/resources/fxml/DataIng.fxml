@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="interfacesController.DataIngC">
+    <top>
+        <Label alignment="CENTER" text="Gestion des Statistiques de Joueurs">
+        </Label>
+    </top>
+
+    <center>
+        <TableView fx:id="tableView" prefHeight="447.0" prefWidth="800.0">
+            <columns>
+                <TableColumn fx:id="nomColumn" prefWidth="200.0" text="Nom" />
+                <TableColumn fx:id="prenomColumn" prefWidth="200.0" text="Prénom" />
+                <TableColumn fx:id="positionColumn" minWidth="0.0" prefWidth="200.0" text="Position" />
+                <TableColumn fx:id="numeroColumn" minWidth="0.0" prefWidth="200.0" text="Numéro" />
+            </columns>
+        </TableView>
+    </center>
+
+    <bottom>
+        <HBox alignment="CENTER" spacing="10">
+           <children>
+               <Button fx:id="ajouter" onAction="#handleAjouter" prefHeight="25.0" prefWidth="96.0" text="Ajouter" />
+               <Button onAction="#handleAfficher" prefHeight="25.0" prefWidth="90.0" text="Afficher" />
+            <Button fx:id="annuler" mnemonicParsing="false" text="Retour">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Button>
+           </children>
+        </HBox>
+    </bottom>
+</BorderPane>

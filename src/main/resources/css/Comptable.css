@@ -1,0 +1,115 @@
+/* General Styles */
+* {
+    -fx-font-family: "Arial", sans-serif;
+    -fx-font-size: 14px;
+    -fx-base: #f4f4f4;
+}
+
+/* AnchorPane Background and Padding */
+AnchorPane {
+    -fx-background-color: #f7f7f7;
+    -fx-padding: 20;
+}
+
+/* Styling for the TableView */
+.table-view {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dcdcdc;
+    -fx-border-radius: 8;
+    -fx-padding: 10;
+}
+
+/* Styling for TableColumns */
+.table-column {
+    -fx-text-fill: #333333;
+    -fx-font-weight: bold;
+}
+
+/* Button Styles */
+.button {
+    -fx-background-color: #007BFF; /* Blue */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 10 20;
+    -fx-font-size: 16px;
+    -fx-border-radius: 5;
+    -fx-effect: dropshadow(three-pass-box, #000000, 5, 0, 2, 2);
+    -fx-cursor: hand;
+}
+
+.button:hover {
+    -fx-background-color: #0056b3; /* Darker Blue for hover */
+}
+
+.button:pressed {
+    -fx-background-color: #003f7d; /* Even Darker Blue for pressed */
+}
+
+/* Styling for TableView Row */
+.table-row-cell {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #e0e0e0;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #f1f1f1;
+}
+
+/* Styling for the Columns' Headers */
+.table-view .column-header {
+    -fx-background-color: #3f9ae5;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10;
+    -fx-alignment: center;
+}
+
+/* Styling for the Bottom "Retour" Button */
+#retour {
+    -fx-background-color: #FF5733; /* Orange Red */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-border-radius: 5;
+    -fx-padding: 10 20;
+    -fx-cursor: hand;
+}
+
+#retour:hover {
+    -fx-background-color: #e04e28;
+}
+
+#retour:pressed {
+    -fx-background-color: #d1451e;
+}
+
+/* Optional - Styling for the Title or Label */
+.label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333333;
+}
+
+/* Image Styles */
+.image-view {
+    -fx-fit-width: true;
+    -fx-fit-height: true;
+}
+#retour {
+    -fx-background-color: #FF5733; /* Bright Orange Red */
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-border-radius: 5;
+    -fx-padding: 12 25; /* Increase padding for a larger button */
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(three-pass-box, #000000, 5, 0, 2, 2); /* Shadow for better visibility */
+}
+
+#retour:hover {
+    -fx-background-color: #e04e28; /* Darker Orange Red for hover effect */
+}
+
+#retour:pressed {
+    -fx-background-color: #d1451e; /* Even Darker Orange Red for pressed state */
+}

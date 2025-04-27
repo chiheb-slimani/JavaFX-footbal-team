@@ -1,0 +1,68 @@
+/* General Styling */
+AnchorPane {
+    -fx-background-color: #f7f9fc; /* Light blue-gray background for a clean UI */
+}
+
+/* Label Styling */
+Label {
+    -fx-font-family: "Arial";
+    -fx-font-size: 14px;
+    -fx-text-fill: #2c3e50; /* Dark blue-gray for label text */
+}
+
+Label[style~="-fx-font-size:"] {
+    -fx-font-size: 20px; /* For the title */
+    -fx-font-weight: bold;
+    -fx-text-fill: #34495e; /* Slightly darker color for the title */
+}
+
+Label[style~="-fx-font-weight:"] {
+    -fx-text-fill: #e74c3c; /* Red color for Total label */
+}
+
+/* TextField Styling */
+TextField {
+    -fx-background-color: #ffffff;
+    -fx-border-color: #dcdcdc;
+    -fx-border-radius: 4px;
+    -fx-padding: 5px;
+    -fx-font-size: 12px;
+}
+
+TextField:focused {
+    -fx-border-color: #3498db; /* Blue border on focus */
+}
+
+/* Button Styling */
+Button {
+    -fx-background-color: #3498db; /* Blue buttons */
+    -fx-text-fill: #ffffff; /* White text */
+    -fx-font-size: 14px;
+    -fx-padding: 5px 15px;
+    -fx-border-radius: 4px;
+    -fx-cursor: hand;
+}
+
+Button:hover {
+    -fx-background-color: #2980b9; /* Darker blue on hover */
+}
+
+Button:pressed {
+    -fx-background-color: #1abc9c; /* Greenish on press */
+}
+
+/* Total Label Highlight */
+#totalLabel {
+    -fx-font-size: 16px;
+    -fx-text-fill: #e74c3c; /* Bright red for emphasis */
+    -fx-font-weight: bold;
+}
+
+/* Prompt Text Styling */
+TextField > .text {
+    -fx-prompt-text-fill: #95a5a6; /* Light gray for prompt text */
+}
+
+TextField:focused > .text {
+    -fx-prompt-text-fill: transparent;
+}
